@@ -7,8 +7,8 @@ inputs:
     required: true
     default: 'Awesome Guru'
 outputs:
-  myOutput:
-    description: 'total memory'
+  memory:
+    description: total memory
 runs:
   using: 'docker'
   image: 'Dockerfile'
