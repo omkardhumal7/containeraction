@@ -7,7 +7,7 @@ inputs:
     required: true
     default: 'Awesome Guru'
 outputs:
-  memory:
+  myOutput:
     description: 'total memory'
 runs:
   using: 'docker'
