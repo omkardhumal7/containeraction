@@ -2,4 +2,9 @@
 
 echo "Hello $MY_INPUT"
 memory=$(cat /proc/meminfo)
-echo "::set-output name=memory::$memory"
+
+{
+  echo "memory<<EOF"
+  echo "$memory"
+  echo "EOF"
+} >> "$GITHUB_OUTPUT"
